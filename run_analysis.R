@@ -125,7 +125,7 @@ colnames(humanActivity) <- humanActivityCols
 
 #
 # Step 5 - Create a second, independent tidy set with the average of each
-#          variable for each activity and each subject
+#          variable for each activity and each subject.
 #
 
 # group by subject and activity and summarise using mean
