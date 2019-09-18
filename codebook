@@ -1,0 +1,30 @@
+The completed requested file is named: tidy_data.txt
+*DATA*
+The tidy_data.txt document is the text file with the completed dataset that has been completed as requested in the project description.
+
+The fist row contains the names of the variables.
+The subsequent rows contain the values of these variables.
+
+INFO: Identifiers
+subject - Subject identifier, integer, ranges from 1 to 30.
+
+activity - Activity identifier, string with 6 available values:
+WALKING: subject was walking
+WALKING_UPSTAIRS: subject was walking upstairs
+WALKING_DOWNSTAIRS: subject was walking downstairs
+SITTING: subject was sitting
+STANDING: subject was standing
+LAYING: subject was laying
+
+INFO: Transformations - The following transformations were applied to the dataset:
+1. The training and test sets were merged to create 1 data set.
+2. The measurments on the mean and standard deviation were extracted for each individual measurment and the rest were ignored.
+3. The activity identifiers were replaced with the descriptive activity names as detailed above.
+4. The variable names were replaced with descriptive variable names as detailled:
+(e.g. tBodyAcc-mean()-X was expanded to timeDomainBodyAccelerometerMeanX), using the following set of rules:
+Special characters (i.e. (, ), and -) were removed
+The initial f and t were expanded to frequencyDomain and timeDomain respectively.
+Acc, Gyro, Mag, Freq, mean, and std were replaced with Accelerometer, Gyroscope, Magnitude, Frequency, Mean, and StandardDeviation respectively.
+Replaced (supposedly incorrect as per source's features_info.txt file) BodyBody with Body.
+5. With the resultant data set acheived in step 4, the final data set was created indicating the average of each variable for each activity and each subject.
+All the results were acheived from  the script created and stored as: run_analysis.R located in this project.
